@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>طلاب طب</title>
+  <style>
+    body {
+      font-family: "Cairo", sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      min-height: 100vh;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 30px;
+      border-bottom: 5px dashed #fff;
+    }
+    header h1 {
+      margin: 10px 0;
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      animation: pop 1s infinite alternate;
+    }
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); color: #ffd700; }
+    }
+    header img {
+      max-width: 90%;
+      border-radius: 25px;
+      margin-top: 15px;
+      box-shadow: 0 0 20px #fff;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px auto;
+      gap: 25px;
+      max-width: 1200px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      width: 220px;
+      padding: 15px;
+      transition: transform 0.4s, box-shadow 0.4s;
+      cursor: pointer;
+      position: relative;
+    }
+    .card:hover {
+      transform: rotate(-3deg) scale(1.1);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+    .card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.4em;
+      color: #ff4081;
+    }
+    .funny {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+    .emoji {
+      font-size: 1.5em;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>😜 طلاب طب 😜</h1>
+    <img src="group.jpg" alt="Gruppenfoto" style="max-width:100%;height:auto;">
+  </header>
+
+  <section class="team">
+    <div class="card">
+      <span class="emoji">🐺</span>
+      <img src="person1.jpg" alt="الديب">
+      <h2>الديب</h2>
+      <p class="funny">أسرع واحد يهرب من الفحوصات 😂</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🧉</span>
+      <img src="person2.jpg" alt="ابو مرزوق">
+      <h2>ابو مرزوق</h2>
+      <p class="funny">بيفطر شاي بكانولا 😅</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🐒</span>
+      <img src="person3.jpg" alt="الشقال">
+      <h2>الشقال</h2>
+      <p class="funny">شغلتو الرسمية: مقالب 😎</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🤫</span>
+      <img src="person4.jpg" alt="السوتير">
+      <h2>السوتير</h2>
+      <p class="funny">ساكت 24/7 بس ضحكتو تكفي 🤭</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🧙‍♂️</span>
+      <img src="person5.jpg" alt="شيخ العقل">
+      <h2>شيخ العقل</h2>
+      <p class="funny">عندو فتوى لكل موقف 😂</p>
+    </div>
+    <div class="card">
+      <span class="emoji">🍔</span>
+      <img src="person6.jpg" alt="الحتة">
+      <h2>الحتة</h2>
+      <p class="funny">مستعد ياكل أي حاجة 🍕</p>
+    </div>
+  </section>
+
+</body>
+</html>
