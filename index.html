@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>طلاب طب</title>
   <style>
+    
     body {
       font-family: "Cairo", sans-serif;
       background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
@@ -12,6 +13,7 @@
       text-align: center;
       min-height: 100vh;
     }
+    
     header {
       background: rgba(0,0,0,0.6);
       color: white;
@@ -83,6 +85,35 @@
       padding: 5px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
+      /* === News Ticker === */
+      .news-ticker {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 10px 0;
+        border-top: 3px solid #ff4081;
+        z-index: 9999;
+        direction: rtl;
+      }
+
+      .ticker-content {
+        display: inline-block;
+        white-space: nowrap;
+        will-change: transform;
+        animation: ticker 30s linear infinite;
+      }
+
+      @keyframes ticker {
+        0%   { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+      }
   </style>
 </head>
 <body>
@@ -137,6 +168,16 @@
       <p class="funny">زلمة كويس بس احيانا ابو ضرغام ينبضن منو وهو اصلا دايما مبضون</p>
     </div>
   </section>
+</section>
+
+  <div class="news-ticker">
+    <div class="ticker-content">
+      📢 أهلاً بكم في صفحة طلاب طب | 🐺 الديب أسطورة المجموعة |
+      🧉 أبو مرزوق نيرد مشبوه | 🐒 الشقال ألقاب بلا حدود |
+      🤫 السوتير مشروع رجل أعمال مِيّة | 🧙‍♂️ شيخ العقل = سردينة متمدد |
+      🍔 الحتة دايمًا مبضون 🤯
+    </div>
+  </div>
 
 </body>
 </html>
