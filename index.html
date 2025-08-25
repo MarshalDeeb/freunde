@@ -4,6 +4,35 @@
   <meta charset="UTF-8">
   <title>طلاب طب</title>
   <style>
+    /* === Theme-Variablen === */
+    :root{
+      --font: "Cairo", system-ui, sans-serif;
+      --bg1:#ff9a9e; --bg2:#fad0c4; --bg3:#a1c4fd; --bg4:#c2e9fb;
+      --header-bg: rgba(0,0,0,.6);
+      --text:#ffffff;
+      --accent:#ff4081;
+      --card-bg:#ffffff; --shadow:rgba(0,0,0,.2);
+      --ticker-bg:#000000; --ticker-text:#ffffff;
+      --footer-bg:rgba(0,0,0,.75); --footer-text:#ffffff;
+    }
+
+    /* === Bestehendes Styling mit Variablen überschreiben === */
+    body{
+      font-family: var(--font);
+      background: linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3),var(--bg4));
+      padding-bottom: 56px; /* Platz für den festen News-Ticker */
+    }
+    header{ background: var(--header-bg); color: var(--text); }
+    .card{ background: var(--card-bg); box-shadow: 0 6px 15px var(--shadow); }
+    .card h2{ color: var(--accent); }
+    .news-ticker{ background: var(--ticker-bg); color: var(--ticker-text); border-top:3px solid var(--accent); }
+    .site-footer{
+      background: var(--footer-bg); color: var(--footer-text);
+      text-align:center; padding:14px 16px; font-size:.95em;
+      position: relative;
+      margin-bottom: 56px; /* Abstand zum News-Ticker */
+      z-index: 9998;
+    }
     
     body {
       font-family: "Cairo", sans-serif;
@@ -168,7 +197,9 @@
       <p class="funny">زلمة كويس بس احيانا ابو ضرغام ينبضن منو وهو اصلا دايما مبضون</p>
     </div>
   </section>
-</section>
+  <footer class="site-footer">
+      © 2025 طلاب طب – Alle Rechte vorbehalten. Erstellt von Abdullelah
+  </footer>
 
   <div class="news-ticker">
     <div class="ticker-content">
