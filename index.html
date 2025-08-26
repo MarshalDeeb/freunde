@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <title>طلاب طب</title>
   <style>
+    /* === Logo-Stil === */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      float: right;
+      margin-left: 24px;
+    }
+    .logo__text { display: flex; flex-direction: column; }
+    .brand { font-weight: 700; letter-spacing: 0.5px; font-size: 1.5em; line-height:1; }
+    .tagline { opacity: .75; font-size: 0.9em; margin-top: 4px; }
+    .mark { width: 40px; height: 40px; display:block; }
     /* === WhatsApp Kontakt Button === */
     .whatsapp-btn {
       position: fixed;
@@ -106,18 +118,30 @@
     }
     
     header {
-      background: rgba(0,0,0,0.6);
-      color: white;
-      padding: 30px;
-      border-bottom: 5px dashed #fff;
-    }
-    header h1 {
-      margin: 10px 0;
-      font-size: 3em;
-      font-weight: bold;
-      letter-spacing: 2px;
-      animation: pop 1s infinite alternate;
-    }
+  background: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(30,30,30,0.85));
+  color: #fff;
+  padding: 20px 40px;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+  text-align: center;
+
+  /* Schöner Effekt */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  border-radius: 0 0 12px 12px;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin: 0;
+  font-weight: 600;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.8);
+}
+
     @keyframes pop {
       from { transform: scale(1); }
       to { transform: scale(1.05); color: #ffd700; }
@@ -198,7 +222,7 @@
         display: inline-block;
         white-space: nowrap;
         will-change: transform;
-        animation: ticker 60s linear infinite;
+        animation: ticker 45s linear infinite;
       }
 
       @keyframes ticker {
@@ -213,7 +237,25 @@
   </a>
 
   <header>
-  <h1>طلاب طب</h1>
+  <div class="logo" aria-label="Logo Abdul">
+    <svg class="mark" viewBox="0 0 64 64" role="img" aria-labelledby="logoTitle logoDesc" xmlns="http://www.w3.org/2000/svg">
+      <title id="logoTitle">Abdul – Markenzeichen</title>
+      <desc id="logoDesc">Stilisiertes A mit Gradient als Linienzug</desc>
+      <defs>
+        <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#22d3ee" />
+          <stop offset="100%" stop-color="#6366f1" />
+        </linearGradient>
+      </defs>
+      <path d="M12 54 L32 14 L52 54" fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="23" y1="40" x2="41" y2="40" stroke="url(#g)" stroke-width="9" stroke-linecap="round" />
+    </svg>
+    <div class="logo__text">
+      <div class="brand">ABDUL</div>
+      <div class="tagline">المهيب</div>
+    </div>
+  </div>
+  <h1 style="margin-right:60px;">طلاب طب</h1>
   <img src="photo_2025-08-25_13-22-07 (5).jpg" alt="Gruppenfoto" style="max-width:400px;height:auto;">
 </header>
 </header>
@@ -253,9 +295,10 @@
     </div>
     <div class="card">
       <span class="emoji">🤫</span>
-  <img src="photo_2025-08-25_13-22-07 (4).jpg" alt="السوتير">
-      <h2>السوتير</h2>
-      <p class="funny">فاتح خط مي هامبورغ – برلين 🚆💧، وعم يفكر يفتح فرع جديد بسوريا… مشروع عالمي قادم . لديه ايضا هواية الرقص الشرقي! 🤭</p>
+      <img src="photo_2025-08-25_13-22-07 (4).jpg" alt="السوتير">
+      <img src="dokkan_soteer.jpg" alt="دكان السوتير" style="width:100%;height:120px;object-fit:cover;border-radius:12px;margin-top:8px;">
+          <h2>السوتير</h2>
+          <p class="funny">فاتح خط مي هامبورغ – برلين 🚆💧، وعم يفكر يفتح فرع جديد بسوريا… مشروع عالمي قادم . لديه ايضا هواية الرقص الشرقي! 🤭</p>
     </div>
     <div class="card">
       <span class="emoji">🧙‍♂️</span>
@@ -279,10 +322,9 @@
   📢 أهلاً بكم في صفحة طلاب طب | 🐺 الديب أسطورة المجموعة |
   🧉 أبو مرزوق نيرد مشبوه | 🐒 الشقال ألقاب بلا حدود |
   🤫 السوتير مشروع رجل أعمال مِيّة | 🧙‍♂️ شيخ العقل = سردينة متمدد |
-  🍔 الحتة دايمًا مبضون 🤯 | 🎤 الفنانة سوسو تحيي حفلاً كبيراً في الإمارات نهاية هذا الشهر! | 🏰 الشقال ينطلق في مهمة سرية إلى قلعة حلب... هروباً من أعين أبو ضرغام! أحداث مشوّقة قادمة 🔥
+  🍔 الحتة دايمًا مبضون 🤯 | 🎤 الفنانة سوسو تحيي حفلاً كبيراً في الإمارات نهاية هذا الشهر! | 🏰 الشقال ينطلق في مهمة سرية إلى قلعة حلب... هروباً من أعين أبو ضرغام! أحداث مشوّقة قادمة 🔥 | 💧 الفنانة سوسو تفتتح فرع ماء جديد في إدلب، خطوة رائعة لدعم المجتمع المحلي! 🌟
     </div>
   </div>
 
 </body>
 </html>
-
